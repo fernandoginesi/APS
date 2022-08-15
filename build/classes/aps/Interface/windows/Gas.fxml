@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="achorpaneMain" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styleSheets/gas.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aps.Interface.controller.GasController">
+   <children>
+      <VBox fx:id="charts_Vbox" layoutY="47.0" prefHeight="265.0" prefWidth="1250.0">
+         <children>
+            <Pane fx:id="ChartsPaneUp" prefHeight="45.0" prefWidth="1248.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="26.0" layoutY="-4.0" prefHeight="45.0" prefWidth="167.0" text="Gás" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <BorderPane id="charts_Hbox" fx:id="BorderGrafico" prefHeight="224.0" prefWidth="1250.0" />
+         </children>
+      </VBox>
+      <Pane fx:id="PaneMain_ConsAdd" layoutX="1.0" layoutY="340.0" prefHeight="108.0" prefWidth="1248.0" styleClass="PaneMain_ConsAll">
+         <children>
+            <Label alignment="BOTTOM_LEFT" layoutX="16.0" layoutY="18.0" prefHeight="18.0" prefWidth="276.0" text="Adicione Valor em R$ mensal">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox id="calcMensal" fx:id="calcMensal" alignment="BOTTOM_LEFT" layoutX="7.0" layoutY="36.0" prefHeight="59.0" prefWidth="322.0" spacing="15.0">
+               <children>
+                  <JFXComboBox id="categoria" fx:id="Categoria" focusColor="WHITE" prefHeight="26.0" prefWidth="150.0" promptText=" Mês" unFocusColor="#dfdfdf" visibleRowCount="12" />
+                  <JFXTextField id="JFX-TextField" fx:id="text_ValorMensal" focusColor="WHITE" prefHeight="26.0" prefWidth="126.0" promptText="Valor do mensal" unFocusColor="#dfdfdf" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
+               </padding>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane fx:id="PaneMain_Quest" layoutX="14.0" layoutY="466.0" prefHeight="35.0" prefWidth="306.0">
+         <children>
+            <HBox id="PaneMain_Quest" alignment="CENTER" prefHeight="35.0" prefWidth="306.0" spacing="15.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="137.0" text="Seu gas é encanado ?">
+                     <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <JFXRadioButton fx:id="RadioSim" text="Sim">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Sim_Nao" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="RadioNao" text="Não" toggleGroup="$Sim_Nao">
+                     <selectedColor>
+                        <Color red="1.0" green="0.34659942984580994" blue="0.20999999344348907" />
+                     </selectedColor>
+                  </JFXRadioButton>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane fx:id="PaneMain_ConsGsB" layoutY="500.0" prefHeight="108.0" prefWidth="1248.0" styleClass="PaneMain_ConsAll">
+         <children>
+            <Label alignment="BOTTOM_LEFT" layoutX="16.0" layoutY="18.0" prefHeight="18.0" prefWidth="216.0" text="Consumo de Gas ( Botijão )">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox id="calcMensal" fx:id="calcConsumo" layoutX="7.0" layoutY="36.0" prefHeight="58.0" prefWidth="312.0" spacing="15.0">
+               <padding>
+                  <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
+               </padding>
+               <children>
+                  <JFXTextField id="JFX-TextField" fx:id="gasB" focusColor="WHITE" prefHeight="26.0" prefWidth="150.0" promptText="Valor do Gas em R$" unFocusColor="#dfdfdf" />
+                  <JFXTextField id="JFX-TextField" fx:id="horasGB" focusColor="WHITE" prefHeight="26.0" prefWidth="125.0" promptText="Horas" unFocusColor="#dfdfdf" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane fx:id="PaneMain_ConsGsE" layoutY="624.0" prefHeight="108.0" prefWidth="1248.0" styleClass="PaneMain_ConsAll">
+         <children>
+            <Label alignment="BOTTOM_LEFT" layoutX="18.0" layoutY="18.0" prefHeight="18.0" prefWidth="216.0" text="Consumo de Gas ( Encanado )">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox id="calcMensal" fx:id="calcConsumoGs" layoutX="7.0" layoutY="36.0" prefHeight="58.0" prefWidth="313.0" spacing="15.0">
+               <padding>
+                  <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
+               </padding>
+               <children>
+                  <JFXTextField id="JFX-TextField" fx:id="gasE" focusColor="WHITE" prefHeight="26.0" prefWidth="150.0" promptText="Valor do Gas ( M³ )" unFocusColor="#dfdfdf" />
+                  <JFXTextField id="JFX-TextField" fx:id="horasGE" focusColor="WHITE" prefHeight="26.0" prefWidth="125.0" promptText="Horas" unFocusColor="#dfdfdf" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane fx:id="resultConsumoGAS" layoutX="1034.0" layoutY="405.0" prefHeight="328.0" prefWidth="201.0">
+         <children>
+            <HBox id="resultConsumo" fx:id="resultConsumo" prefHeight="328.0" prefWidth="202.0" spacing="5.0">
+               <children>
+                  <Pane fx:id="PaneResultAp" prefHeight="216.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="167.0" text="Consumo de gas" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" layoutY="100.0" prefHeight="145.0" prefWidth="200.0">
+                           <children>
+                              <Pane fx:id="PaneResultApCircle" prefHeight="145.0" prefWidth="150.0">
+                                 <children>
+                                    <Label fx:id="LabelResultConsgas" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="27.0" prefHeight="85.0" prefWidth="98.0" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

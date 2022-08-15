@@ -1,0 +1,34 @@
+.PaneMain_ConsAll{
+    -fx-background-color:  #EDF2F6;
+}
+
+/*Charts*/
+#charts_Hbox{
+    -fx-background-color: #EDF2F6;
+}
+#ChartsPaneUp{
+    -fx-background-color: #B32832;
+}
+#ChartsPaneDown{
+    -fx-background-color: #B32832;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.data0.chart-bar {
+    -fx-background-color: #0D293E;
+}
+
+.default-color0.chart-area-symbol { -fx-background-color: #222222 }
+.default-color1.chart-area-symbol { -fx-background-color: #222222 }
+.default-color2.chart-area-symbol { -fx-background-color: #222222 }
+ 
+.default-color0.chart-series-area-line { -fx-stroke: #00D5DF; }
+.default-color1.chart-series-area-line { -fx-stroke: #FBC67D; }
+.default-color2.chart-series-area-line { -fx-stroke: #E2727D; }
+ 
+.default-color0.chart-series-area-fill { -fx-fill: rgba(0, 217, 224, 0.20); }
+.default-color1.chart-series-area-fill { -fx-fill: rgba(251, 199, 126, 0.20); }
+.default-color2.chart-series-area-fill { -fx-fill: rgba(226, 115, 126, 0.20); }
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="734.0" prefWidth="1248.0" stylesheets="@../styleSheets/inicio.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aps.Interface.controller.InicioController">
+   <children>
+      <Pane layoutY="106.0" prefHeight="200.0" prefWidth="1240.0">
+         <children>
+            <AreaChart fx:id="ChartsAll" alternativeRowFillVisible="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutY="9.0" legendVisible="false" prefHeight="186.0" prefWidth="1248.0" style="-fx-background-color: #EDF2F6;" verticalGridLinesVisible="false" verticalZeroLineVisible="false">
+              <xAxis>
+                <CategoryAxis fx:id="X" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="Y" side="LEFT" />
+              </yAxis>
+            </AreaChart>
+            <Pane layoutY="190.0" prefHeight="9.0" prefWidth="1248.0" style="-fx-background-color: #222222;" />
+            <Pane prefHeight="9.0" prefWidth="1248.0" style="-fx-background-color: #222222;" />
+         </children>
+      </Pane>
+      <Pane layoutY="63.0" prefHeight="44.0" prefWidth="1248.0" style="-fx-background-color: #222222;">
+         <children>
+            <Label layoutX="24.0" layoutY="12.0" prefHeight="33.0" prefWidth="102.0" text="INICIO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="313.0" prefHeight="422.0" prefWidth="1248.0" styleClass="PaneMain_ConsAll">
+         <children>
+            <HBox alignment="CENTER" layoutY="11.0" prefHeight="152.0" prefWidth="1248.0">
+               <children>
+                  <Pane prefHeight="157.0" prefWidth="249.0" style="-fx-background-color: #00D5DF; -fx-background-radius: 50 0 0 50;">
+                     <children>
+                        <Label layoutX="30.0" layoutY="14.0" prefHeight="22.0" prefWidth="63.0" text="Agua" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="MediaAgua" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="48.0" prefHeight="72.0" prefWidth="217.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="157.0" prefWidth="249.0" style="-fx-background-color: #FBC67D; -fx-background-radius: 0;">
+                     <children>
+                        <Label layoutX="30.0" layoutY="14.0" prefHeight="26.0" prefWidth="157.0" text="Eletrecidade" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="MediaEletrecidade" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="48.0" prefHeight="72.0" prefWidth="217.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="157.0" prefWidth="249.0" style="-fx-background-color: #E2727D; -fx-background-radius: 0 50 50 0;">
+                     <children>
+                        <Label layoutX="30.0" layoutY="14.0" prefHeight="22.0" prefWidth="63.0" text="Gás" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="MediaGas" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="48.0" prefHeight="72.0" prefWidth="217.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

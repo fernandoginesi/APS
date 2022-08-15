@@ -1,0 +1,82 @@
+/*Main*/
+.anchorpane_main{
+    -fx-background-color: transparent;
+}
+#borderPane_main{
+    -fx-background-color: #FEF9EF;
+}
+#PopUp{
+    -fx-background-color: #04CDFF;
+    -fx-background-radius: 20;
+}
+#minusPOP:hover{
+    -fx-fill: #00ff0d;
+    -fx-cursor:hand;
+}
+#closePOP:hover{
+    -fx-fill: #ff0000;
+    -fx-cursor:hand;
+}
+
+/*SideBar*/
+.sidebar_main{
+    -fx-background-color: linear-gradient(to bottom, #028444 0%, #01582d 84%);
+}
+#btn_inicio:hover{
+    -fx-background-color: #5C5C5C;
+}
+#btn_agua:hover{
+    -fx-background-color: #00D5DF;
+}
+#btn_eletrecidade:hover{
+    -fx-background-color: #FBC67D;
+}
+#btn_gas:hover{
+    -fx-background-color: #E2727D;
+}
+#btn_inicio:focused{
+    -fx-background-color: #5C5C5C;
+}
+#btn_agua:focused{
+    -fx-background-color: #00D5DF;
+}
+#btn_eletrecidade:focused{
+    -fx-background-color: #FBC67D;
+}
+#btn_gas:focused{
+    -fx-background-color: #E2727D;
+}
+.btn{
+    -fx-background-radius: 0;
+    -fx-cursor:hand;
+}
+
+/*TopBar*/
+#anchorpane_mainTop{
+    -fx-background-color: #01582D;
+}
+.topbar_main{
+    -fx-background-color: #FEEFDA;
+    -fx-background-radius: 0 0 0 15;
+}
+.topbar_second{
+    -fx-background-color: trasparent;
+}
+#minus{
+    -fx-fill: #BBCE24;
+    -fx-cursor:hand;
+}
+#minus:hover{
+    -fx-fill: #d8f008;
+    -fx-cursor:hand;
+}
+
+#close{
+    -fx-fill: #DB4D5C;
+    -fx-cursor:hand;
+}
+
+#close:hover{
+    -fx-fill: #ff1d37;
+    -fx-cursor:hand;
+}

@@ -1,0 +1,106 @@
+#achorpaneMain{
+   -fx-background-color: #FEF9EF; 
+}
+#JFX-TextField{
+    -fx-text-fill: #ffffff;
+}
+
+/*Charts*/
+#charts_Hbox{
+    -fx-background-color: #EDF2F6;
+}
+#ChartsPaneUp{
+    -fx-background-color: #F9A635;
+}
+#ChartsPaneDown{
+    -fx-background-color: #F9A635;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.data0.chart-bar {
+    -fx-background-color: #0D293E;
+}
+.default-color0.chart-area-symbol { -fx-background-color: #222222 }
+.default-color0.chart-series-area-line { -fx-stroke: #222222; }
+.default-color0.chart-series-area-fill { -fx-fill: #FBC67D; }
+
+/*Consumo Mensal*/
+#PaneMain_ConsAn{
+    -fx-background-color:  #EDF2F6;
+}
+#calcMensal{
+    -fx-background-color: #F5AE56;
+    -fx-background-radius: 10;
+    -fx-border-color: #D3DFE9;
+    -fx-border-radius: 10;
+}
+#btn_calcMensal{
+    -fx-border-color: #282A36;
+}
+/*Combo-Box*/
+#texto_test{
+    -fx-text-fill: #ffffff;
+}
+.combo-box .list-cell{
+    -fx-text-fill: #ffffff;
+}
+.combo-box{
+    -fx-cursor: hand;
+    -fx-text-fill: #ffffff;
+}
+.combo-box-base .list-view{
+    -fx-padding: 4 0 4 5;
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+.combo-box-popup .list-cell {    
+    -fx-background-color: #222222;    
+    -fx-text-fill: #ffffff;
+}
+.combo-box-popup .list-cell:hover {    
+    -fx-background-color: #444444;
+}
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover{
+    -fx-background-color: #26da59;
+    -fx-text-fill: #222222;
+}
+.combo-box-popup .list-view .virtual-flow .clipped-container .sheet .list-cell {
+    -fx-cursor: hand;
+}
+
+/*Consumo Aparelho*/
+#calcConsumo{
+    -fx-border-color: #282A36;
+    -fx-border-radius: 10;
+}
+#PaneMain_ConsAp{
+    -fx-background-color: #EDF2F6;
+}
+
+/*Resultado*/
+#PaneResultAn{
+    -fx-background-color:  #fab863;
+}
+#PaneResultAnCircle{
+    -fx-background-color: #222222;
+    -fx-background-radius:  100;
+    -fx-border-color:  #9BBE30;
+    -fx-border-radius: 100;
+    -fx-border-width: 4;
+}
+#PaneResultAp{
+    -fx-background-color:  #fab863;
+}
+#PaneResultApCircle{
+    -fx-background-color:  #0D293E;
+    -fx-background-radius:  100;
+    -fx-border-color:  #9BBE30;
+    -fx-border-radius: 100;
+    -fx-border-width: 4;
+}
+#media{
+    -fx-background-color: #FEF9EF;
+    -fx-background-radius: 20;
+}

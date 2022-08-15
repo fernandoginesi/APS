@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="achorpaneMain" fx:id="achorpaneMain" prefHeight="730.0" prefWidth="1248.0" stylesheets="@../styleSheets/eletrecidade.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aps.Interface.controller.EletrecidadeController">
+   <children>
+      <VBox fx:id="charts_Vbox" layoutY="47.0" prefHeight="265.0" prefWidth="1250.0">
+         <children>
+            <Pane fx:id="ChartsPaneUp" prefHeight="45.0" prefWidth="1248.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="26.0" layoutY="-4.0" prefHeight="45.0" prefWidth="167.0" text="Eletrecidade" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <BorderPane id="charts_Hbox" fx:id="BorderGrafico" prefHeight="224.0" prefWidth="1250.0" />
+         </children>
+      </VBox>
+      <Pane id="PaneMain_ConsAn" fx:id="PaneMain_ConsAn" layoutX="1.0" layoutY="340.0" prefHeight="108.0" prefWidth="1248.0">
+         <children>
+            <Label alignment="BOTTOM_LEFT" layoutX="16.0" layoutY="18.0" prefHeight="18.0" prefWidth="276.0" text="Adicione Valor em R$ mensal">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox id="calcMensal" fx:id="calcMensal" alignment="BOTTOM_LEFT" layoutX="7.0" layoutY="36.0" prefHeight="59.0" prefWidth="400.0" spacing="15.0">
+               <children>
+                  <JFXComboBox id="categoria" fx:id="CategoriaAnos" focusColor="WHITE" prefHeight="26.0" prefWidth="91.0" promptText="Anos" unFocusColor="#dfdfdf" visibleRowCount="12" />
+                  <JFXComboBox id="categoria" fx:id="Categoria" focusColor="WHITE" prefHeight="26.0" prefWidth="124.0" promptText=" Mês" unFocusColor="#dfdfdf" visibleRowCount="12" />
+                  <JFXTextField id="JFX-TextField" fx:id="text_ValorMensal" focusColor="WHITE" prefHeight="26.0" prefWidth="126.0" promptText="Valor do mensal" unFocusColor="#dfdfdf" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
+               </padding>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane id="PaneMain_ConsAp" fx:id="PaneMain_ConsAp" layoutX="1.0" layoutY="461.0" prefHeight="108.0" prefWidth="1248.0">
+         <children>
+            <Label alignment="BOTTOM_LEFT" layoutX="16.0" layoutY="18.0" prefHeight="18.0" prefWidth="216.0" text="Calcule o consumo em R$">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox id="calcMensal" fx:id="calcConsumo" layoutX="7.0" layoutY="36.0" prefHeight="58.0" prefWidth="471.0" spacing="15.0">
+               <padding>
+                  <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
+               </padding>
+               <children>
+                  <JFXTextField id="JFX-TextField" fx:id="watts" focusColor="WHITE" prefHeight="26.0" prefWidth="150.0" promptText="Watts" unFocusColor="#dfdfdf" />
+                  <JFXTextField id="JFX-TextField" fx:id="horas" focusColor="WHITE" prefHeight="26.0" prefWidth="80.0" promptText="Horas" unFocusColor="#dfdfdf" />
+                  <JFXTextField id="JFX-TextField" fx:id="dias" focusColor="WHITE" prefHeight="26.0" prefWidth="80.0" promptText="Dias" unFocusColor="#dfdfdf" />
+                  <JFXTextField id="JFX-TextField" fx:id="tarifa" focusColor="WHITE" prefHeight="26.0" prefWidth="90.0" promptText="Tarifa" unFocusColor="#dfdfdf" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane id="PaneMain_ConsAp" fx:id="PaneMain_ConsEn" layoutX="1.0" layoutY="578.0" prefHeight="108.0" prefWidth="1248.0">
+         <children>
+            <Label alignment="BOTTOM_LEFT" layoutX="18.0" layoutY="18.0" prefHeight="18.0" prefWidth="216.0" text="Calcule o consumo de energia">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox id="calcMensal" fx:id="calcConsumoEn" layoutX="7.0" layoutY="36.0" prefHeight="58.0" prefWidth="471.0" spacing="15.0">
+               <padding>
+                  <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
+               </padding>
+               <children>
+                  <JFXTextField id="JFX-TextField" fx:id="wattsEn" focusColor="WHITE" prefHeight="26.0" prefWidth="150.0" promptText="Watts" unFocusColor="#dfdfdf" />
+                  <JFXTextField id="JFX-TextField" fx:id="horasEn" focusColor="WHITE" prefHeight="26.0" prefWidth="125.0" promptText="Horas" unFocusColor="#dfdfdf" />
+                  <JFXTextField id="JFX-TextField" fx:id="diasEn" focusColor="WHITE" prefHeight="26.0" prefWidth="125.0" promptText="Dias" unFocusColor="#dfdfdf" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <HBox id="resultConsumo" fx:id="resultConsumo" layoutX="840.0" layoutY="402.0" prefHeight="328.0" prefWidth="406.0" spacing="5.0">
+         <children>
+            <Pane fx:id="PaneResultAn" prefHeight="216.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="167.0" text="Gasto em R$" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" layoutY="100.0" prefHeight="145.0" prefWidth="200.0">
+                     <children>
+                        <Pane fx:id="PaneResultAnCircle" prefHeight="145.0" prefWidth="150.0">
+                           <children>
+                              <Label fx:id="LabelResultMs" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="27.0" prefHeight="85.0" prefWidth="98.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane fx:id="PaneResultAp" prefHeight="216.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="167.0" text="Consumo de Energia" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" layoutY="100.0" prefHeight="145.0" prefWidth="200.0">
+                     <children>
+                        <Pane fx:id="PaneResultApCircle" prefHeight="145.0" prefWidth="150.0">
+                           <children>
+                              <Label fx:id="LabelResultAp" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="27.0" prefHeight="85.0" prefWidth="98.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
